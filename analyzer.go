@@ -82,6 +82,13 @@ func New() *Analyzer { return &Analyzer{} }
 // Capability implements analyzer.Analyzer.
 func (*Analyzer) Capability() analyzer.Capability { return capability }
 
+// nonCode lists markup, style and template languages. Their size and
+// repetition say little about maintainability, so they are not measured.
+var nonCode = map[string]bool{
+	"HTML": true, "CSS": true, "SCSS": true, "Sass": true, "Less": true, "XML": true,
+	"Twig": true, "Handlebars": true, "EJS": true, "Jinja": true, "Liquid": true, "Razor": true, "MDX": true,
+}
+
 var markerRe = regexp.MustCompile(`\b(FIXME|HACK|XXX)\b`)
 
 type fnAt struct {
@@ -109,7 +116,7 @@ func (*Analyzer) Analyze(ctx context.Context, in *analyzer.Input) (*analyzer.Res
 		if err := ctx.Err(); err != nil {
 			return nil, err
 		}
-		if f.Lines == 0 || f.Size > fsutil.DefaultMaxRead {
+		if f.Lines == 0 || f.Size > fsutil.DefaultMaxRead || nonCode[f.Language] {
 			continue
 		}
 		src, _, err := fsutil.ReadFile(root, f.Path, fsutil.DefaultMaxRead)
