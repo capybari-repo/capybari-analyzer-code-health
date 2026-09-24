@@ -37,23 +37,23 @@ const (
 
 // Summary is the evidence published under "code-health".
 type Summary struct {
-	FilesMeasured     int        `json:"files_measured"`
-	Functions         int        `json:"functions"`
-	AvgComplexity     float64    `json:"avg_complexity"`
-	P90Complexity     int        `json:"p90_complexity"`
-	MaxComplexity     int        `json:"max_complexity"`
-	ComplexFunctions  int        `json:"complex_functions"`
-	LongFunctions     int        `json:"long_functions"`
-	SourceLines       int        `json:"source_lines"`
-	DuplicatedLines   int        `json:"duplicated_lines"`
-	DuplicationPct    float64    `json:"duplication_pct"`
-	Clones            int        `json:"clones"`
-	Markers           int        `json:"markers"`
-	Hotspots          []Hotspot  `json:"hotspots,omitempty"`
-	TopFunctions      []FuncRef  `json:"top_functions,omitempty"`
-	ChurnWindow       string     `json:"churn_window,omitempty"`
-	PreciseLanguages  []string   `json:"precise_languages,omitempty"`
-	HeuristicLanguage []string   `json:"heuristic_languages,omitempty"`
+	FilesMeasured     int       `json:"files_measured"`
+	Functions         int       `json:"functions"`
+	AvgComplexity     float64   `json:"avg_complexity"`
+	P90Complexity     int       `json:"p90_complexity"`
+	MaxComplexity     int       `json:"max_complexity"`
+	ComplexFunctions  int       `json:"complex_functions"`
+	LongFunctions     int       `json:"long_functions"`
+	SourceLines       int       `json:"source_lines"`
+	DuplicatedLines   int       `json:"duplicated_lines"`
+	DuplicationPct    float64   `json:"duplication_pct"`
+	Clones            int       `json:"clones"`
+	Markers           int       `json:"markers"`
+	Hotspots          []Hotspot `json:"hotspots,omitempty"`
+	TopFunctions      []FuncRef `json:"top_functions,omitempty"`
+	ChurnWindow       string    `json:"churn_window,omitempty"`
+	PreciseLanguages  []string  `json:"precise_languages,omitempty"`
+	HeuristicLanguage []string  `json:"heuristic_languages,omitempty"`
 }
 
 // Hotspot is a file that is both complex and frequently changed.
