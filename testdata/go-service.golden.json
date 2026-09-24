@@ -1,0 +1,50 @@
+{
+  "findings": null,
+  "summary": {
+    "files_measured": 3,
+    "functions": 4,
+    "avg_complexity": 1.3,
+    "p90_complexity": 1,
+    "max_complexity": 2,
+    "complex_functions": 0,
+    "long_functions": 0,
+    "source_lines": 63,
+    "duplicated_lines": 0,
+    "duplication_pct": 0,
+    "clones": 0,
+    "markers": 0,
+    "top_functions": [
+      {
+        "path": "internal/api/handler.go",
+        "name": "Router",
+        "line": 12,
+        "complexity": 2,
+        "lines": 12
+      },
+      {
+        "path": "cmd/server/main.go",
+        "name": "main",
+        "line": 10,
+        "complexity": 1,
+        "lines": 5
+      },
+      {
+        "path": "internal/store/store.go",
+        "name": "New",
+        "line": 18,
+        "complexity": 1,
+        "lines": 1
+      },
+      {
+        "path": "internal/store/store.go",
+        "name": "Store.Get",
+        "line": 21,
+        "complexity": 1,
+        "lines": 6
+      }
+    ],
+    "precise_languages": [
+      "Go"
+    ]
+  }
+}

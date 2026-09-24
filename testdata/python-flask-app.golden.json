@@ -1,0 +1,50 @@
+{
+  "findings": null,
+  "summary": {
+    "files_measured": 3,
+    "functions": 4,
+    "avg_complexity": 2.5,
+    "p90_complexity": 2,
+    "max_complexity": 6,
+    "complex_functions": 0,
+    "long_functions": 0,
+    "source_lines": 46,
+    "duplicated_lines": 0,
+    "duplication_pct": 0,
+    "clones": 0,
+    "markers": 0,
+    "top_functions": [
+      {
+        "path": "app/models.py",
+        "name": "to_dict",
+        "line": 17,
+        "complexity": 6,
+        "lines": 6
+      },
+      {
+        "path": "app/routes.py",
+        "name": "get_invoice",
+        "line": 10,
+        "complexity": 2,
+        "lines": 6
+      },
+      {
+        "path": "app/__init__.py",
+        "name": "create_app",
+        "line": 6,
+        "complexity": 1,
+        "lines": 4
+      },
+      {
+        "path": "app/models.py",
+        "name": "find",
+        "line": 14,
+        "complexity": 1,
+        "lines": 2
+      }
+    ],
+    "heuristic_languages": [
+      "Python"
+    ]
+  }
+}

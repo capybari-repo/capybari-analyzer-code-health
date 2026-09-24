@@ -1,0 +1,24 @@
+id: code-health
+name: Code Health
+version: 0.1.0
+category: maintainability
+summary: Measures function complexity, length, nesting and parameters, file size, duplicated code and FIXME/HACK markers, and finds hotspots where complex code changes often.
+stability: stable
+core_api: v0
+targets: [repository]
+requires: [inventory]
+provides: [code-health]
+findings: [complexity, long-function, deep-nesting, many-parameters, large-file, duplication, hotspot, work-markers]
+scores: [maintainability]
+cost: medium
+execution:
+  local: true
+  network: none
+  ai: none
+privacy: Runs entirely locally, reading source files and local git history. Nothing leaves the machine.
+methodology: https://github.com/capybari/capybari-analyzer-code-health/blob/main/docs/methodology.md
+follow_ups:
+  - capability: architecture
+    reason: Complexity hotspots were found; see how they are coupled to the rest of the system before refactoring.
+    when:
+      finding_categories: [hotspot, complexity]

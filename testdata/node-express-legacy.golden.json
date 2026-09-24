@@ -1,0 +1,50 @@
+{
+  "findings": null,
+  "summary": {
+    "files_measured": 5,
+    "functions": 4,
+    "avg_complexity": 1.3,
+    "p90_complexity": 1,
+    "max_complexity": 2,
+    "complex_functions": 0,
+    "long_functions": 0,
+    "source_lines": 54,
+    "duplicated_lines": 0,
+    "duplication_pct": 0,
+    "clones": 0,
+    "markers": 1,
+    "top_functions": [
+      {
+        "path": "src/db.js",
+        "name": "query",
+        "line": 6,
+        "complexity": 2,
+        "lines": 4
+      },
+      {
+        "path": "src/utils/dates.js",
+        "name": "formatDate",
+        "line": 4,
+        "complexity": 1,
+        "lines": 3
+      },
+      {
+        "path": "src/utils/dates.js",
+        "name": "auditDate",
+        "line": 8,
+        "complexity": 1,
+        "lines": 3
+      },
+      {
+        "path": "src/utils/log.js",
+        "name": "logQuery",
+        "line": 3,
+        "complexity": 1,
+        "lines": 3
+      }
+    ],
+    "heuristic_languages": [
+      "JavaScript"
+    ]
+  }
+}
