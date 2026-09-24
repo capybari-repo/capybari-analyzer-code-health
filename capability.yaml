@@ -16,7 +16,7 @@ execution:
   network: none
   ai: none
 privacy: Runs entirely locally, reading source files and local git history. Nothing leaves the machine.
-methodology: https://github.com/capybari/capybari-analyzer-code-health/blob/main/docs/methodology.md
+methodology: https://github.com/capybari-repo/capybari-analyzer-code-health/blob/main/docs/methodology.md
 follow_ups:
   - capability: architecture
     reason: Complexity hotspots were found; see how they are coupled to the rest of the system before refactoring.

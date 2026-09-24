@@ -5,11 +5,11 @@ import (
 	"path/filepath"
 	"testing"
 
-	codehealth "github.com/capybari/capybari-analyzer-code-health"
-	"github.com/capybari/capybari-core/analyzer"
-	"github.com/capybari/capybari-core/analyzertest"
-	"github.com/capybari/capybari-core/facts"
-	"github.com/capybari/capybari-schemas"
+	codehealth "github.com/capybari-repo/capybari-analyzer-code-health"
+	"github.com/capybari-repo/capybari-core/analyzer"
+	"github.com/capybari-repo/capybari-core/analyzertest"
+	"github.com/capybari-repo/capybari-core/facts"
+	"github.com/capybari-repo/capybari-schemas"
 	"gopkg.in/yaml.v3"
 )
 

@@ -2,8 +2,8 @@
 package main
 
 import (
-	codehealth "github.com/capybari/capybari-analyzer-code-health"
-	"github.com/capybari/capybari-core/standalone"
+	codehealth "github.com/capybari-repo/capybari-analyzer-code-health"
+	"github.com/capybari-repo/capybari-core/standalone"
 )
 
 var version = "dev"
